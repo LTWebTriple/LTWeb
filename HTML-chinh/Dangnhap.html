@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.css">
+    <script src="../HTML-chinh/js/JQuery.js"></script>
+    <script src="../HTML-chinh/js/DN.js"></script>
+    <script src="../HTML-chinh/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: pink;
+        }
+        
+        h1 {
+            text-align: center;
+            clear: left;
+            margin-top: 20px;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        b {
+            font-size: 20px;
+        }
+        
+        .MLogin {
+            background-color: #67A3FD;
+            font-size: 20px;
+            color: red;
+            width: 100%;
+            height: 40px;
+        }
+        
+        #container {
+            width: 40%;
+            margin: 10% auto 10% auto;
+            padding: 10px 10px 10px 10px;
+            border: 1px solid #888;
+            border-radius: 5px;
+        }
+        
+        #loiuser,
+        #loipass {
+            color: red;
+            font-size: 15px;
+        }
+        
+        #Success {
+            color: blue;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THE EXAM PERFORMANCE PROGRAM</h1>
+    <div id="container">
+        <label><b>User name</b></label>
+        <input type="text" placeholder="Enter User name" name="uname" required id="form_user">
+        <div id="loiuser"></div>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter password" name="psw" required id="form_pass">
+        <div id="loipass"></div>
+        <button id="Login" class=MLogin type="submit">Login</button>
+
+    </div>
+    <div id="Success">
+    </div>
+
+</body>
+
+</html>

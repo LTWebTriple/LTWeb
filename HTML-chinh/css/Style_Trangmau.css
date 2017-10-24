@@ -1,0 +1,441 @@
+body {
+    margin: 0;
+}
+
+.header {
+    box-shadow: 0 1px 3px #ddd;
+    background: #fff;
+    border-radius: 0;
+    z-index: 999;
+    position: relative;
+}
+
+.header .container {
+    position: relative;
+}
+
+.site-logo {
+    float: left;
+    font-size: 23px;
+    font-weight: 400;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+
+/* Navigation */
+
+.header-navigation {
+    font: 5px "Cambria Math";
+    margin-top: 10px;
+    margin-right: -20px;
+    padding: 0;
+    float: left;
+    text-transform: uppercase;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #48525e;
+    text-align: center;
+    margin-top: -3px;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: white;
+}
+
+.dropdown-content a {
+    font: "Cambria Math";
+    color: #48525e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+    margin-left: -12px;
+}
+
+.show {
+    display: block;
+}
+
+.header-navigation .dropdown {
+    margin-top: 4px;
+}
+
+.header .mobi-toggler {
+    float: right;
+    color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 100% !important;
+    width: 32px;
+    height: 32px;
+    display: none;
+    margin: 38px 20px 0 30px;
+    position: relative;
+    background: #fff url(../HTML_Test001/Photo/toggler.png) no-repeat 6px 8px;
+}
+
+.header .mobi-toggler i {
+    display: none;
+}
+
+.header .mobi-toggler:hover {
+    background: #B5E61D url(../HTML_Test001/Photo/toggler.png) no-repeat 6px -28px;
+    border-color: #B5E61D;
+    color: #fff;
+}
+
+.pre-header .fa {
+    margin-right: 10px;
+}
+
+.header-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-navigation>ul>li {
+    float: left;
+}
+
+.header-navigation>ul>li>a {
+    color: #48525e;
+    display: block;
+    padding: 29px 12px 30px;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-navigation>ul>li>button {
+    color: #48525e;
+    height: 70px;
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    font: "Cambria Math";
+}
+
+.header-navigation>ul>li>button.lauch,
+.header-navigation>ul>li>button.change,
+.header-navigation>ul>li>button:active {
+    border-block-end-color: white;
+}
+
+.header-navigation>ul>li>.active>button,
+.header-navigation ul>li>button:hover,
+.header-navigation ul>li>button:focus,
+.header-navigation ul>li.open>button,
+.header-navigation ul>li.open>button:hover,
+.header-navigation ul>li.open>button:focus,
+.header-navigation ul>li.active>a,
+.header-navigation ul>li>a:hover,
+.header-navigation ul>li>a:focus,
+.header-navigation ul>li.open>a,
+.header-navigation ul>li.open>a:hover,
+.header-navigation ul>li.open>a:focus,
+.header-navigation ul>li.active>.dropdown-content a,
+.header-navigation ul>li>.dropdown-content a:hover,
+.header-navigation ul>li>.dropdown-content a:focus,
+.header-navigation ul>li.open>.dropdown-content a,
+.header-navigation ul>li.open>.dropdown-content a:hover,
+.header-navigation ul>li.open>.dropdown-content a:focus {
+    color: #B5E61D;
+    background: #fcfcfc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-navigation ul>li.active>a {
+    border-bottom: 2px solid #B5E61D;
+    cursor: pointer;
+}
+
+.header-navigation ul>li.active>button {
+    border-bottom: 2px solid #B5E61D;
+    cursor: pointer;
+}
+
+.header .container .mobi-toggler {
+    display: none;
+}
+
+@media screen and (max-width: 663px) {
+    #myTopnav a {
+        display: none;
+    }
+    #myTopnav button {
+        display: none;
+    }
+    .header .container .mobi-toggler {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 663px) {
+    #myTopnav.responsive {
+        position: relative;
+    }
+    .header .container .mobi-toggler {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #myTopnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #myTopnav.responsive button {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.marquee {
+    font-family: "Open Sans", sans-serif;
+    padding-top: 6px;
+    font-size: 18px;
+    color: #B5E61D;
+    background-color: #48525e;
+    height: 35px;
+}
+
+#centermid {
+    height: 30vw;
+    width: 100%;
+}
+
+.first {
+    height: 80vw;
+    background-color: black;
+}
+
+.second {
+    height: 80vw;
+    background-color: pink;
+}
+
+.last {
+    height: 80vw;
+    background-color: yellowgreen;
+}
+
+@media screen and (max-width: 730px) {
+    .marquee {
+        font-size: 13px;
+        height: 20px;
+        padding-top: 2px;
+    }
+}
+
+#indic {
+    margin-bottom: -10px;
+}
+
+.page-prefooter {
+    background: #48525e;
+    color: #a2abb7;
+}
+
+.page-prefooter h2 {
+    color: #4db3a4;
+}
+
+.page-footer {
+    background: #3b434c;
+    color: #a2abb7;
+}
+
+.page-prefooter {
+    padding: 30px 0;
+    clear: both;
+}
+
+.page-prefooter h2 {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 12px;
+}
+
+.page-prefooter .social-icons {
+    padding-top: 9px;
+}
+
+.page-prefooter .social-icons li {
+    opacity: 0.35;
+    filter: alpha(opacity=35);
+}
+
+.page-prefooter .social-icons li:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.page-prefooter p,
+.page-prefooter address {
+    margin: 0;
+}
+
+
+/* Footer */
+
+.page-footer {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 17px 0;
+}
+
+@media (max-width: 991px) {
+    /* 991px */
+    .page-prefooter {
+        padding-bottom: 10px;
+    }
+    .page-prefooter .footer-block {
+        margin-bottom: 20px;
+    }
+    .page-prefooter>.container {
+        width: 100%;
+        max-width: none !important;
+        margin: 0 !important;
+    }
+    .page-footer>.container {
+        width: 100%;
+        max-width: none !important;
+        margin: 0 !important;
+    }
+}
+
+
+/***
+Social Icons
+***/
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons:before,
+.social-icons:after {
+    content: " ";
+    display: table;
+}
+
+.social-icons:after {
+    clear: both;
+}
+
+.social-icons li {
+    float: left;
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+}
+
+.social-icons li>a {
+    border-radius: 2px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons li:hover>a {
+    background-position: 0 -38px;
+}
+
+.social-icons li .facebook {
+    background: url(../Photo/social/facebook.png) no-repeat;
+}
+
+.social-icons li .googleplus {
+    background: url(../Photo/social/googleplus.png) no-repeat;
+}
+
+.social-icons li .twitter {
+    background: url(../Photo/social/twitter.png) no-repeat;
+}
+
+.social-icons li .youtube {
+    background: url(../Photo/social/youtube.png) no-repeat;
+}
+
+.social-icons.social-icons-color>li>a {
+    opacity: 0.7;
+    background-position: 0 -38px !important;
+}
+
+.social-icons.social-icons-color>li>a:hover {
+    opacity: 1;
+}
+
+.social-icons.social-icons-circle>li>a {
+    border-radius: 25px !important;
+}
+
+
+/***
+  Inline Social Icons
+  ***/
+
+.social-icon {
+    display: inline-block !important;
+    width: 28px;
+    height: 28px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icon.facebook {
+    background: url(../HTML_Test001/photo/social/facebook.png) no-repeat;
+}
+
+.social-icon.googleplus {
+    background: url(../HTML_Test001/photo/social/googleplus.png) no-repeat;
+}
+
+.social-icon.twitter {
+    background: url(../HTML_Test001/photo/social/twitter.png) no-repeat;
+}
+
+.social-icon.youtube {
+    background: url(../HTML_Test001/photo/social/youtube.png) no-repeat;
+}
+
+.social-icon:hover {
+    background-position: 0 -38px;
+}
+
+.social-icon-color {
+    opacity: 0.7;
+    background-position: 0 -38px !important;
+}
+
+.social-icon-color:hover {
+    opacity: 1;
+}

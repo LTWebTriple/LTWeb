@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.css">
+    <link rel="stylesheet" href="H:\HTML-chinh\css\Sudent_info.css">
+    <script src="../HTML-chinh/js/JQuery.js"></script>
+    <script src="../HTML-chinh/js/Student-info.js"></script>
+    <script src="../HTML-chinh/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="chinh">
+        <div class="wrapper">
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="index2.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>TRIPLE</b></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><img src="../HTML-chinh/Photo/Logo.png" class="logo-image" alt="User Image" width="263px" height="54px"></span>
+                </a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" id="NutBam" data-toggle="offcanvas" role="button">
+                        <!-- <span class="sr-only">Toggle navigation</span> -->
+                        <img src="../HTML-chinh/Photo/togget.png" class="tt" alt="User Image"></span>
+                    </a>
+
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="../HTML-chinh/Photo/user2-160x160.jpg" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">Bùi Xuân Trí</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="../HTML-chinh/Photo/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                        <p>
+                                            Bùi Xuân Trí
+                                            <small>Student</small>
+                                        </p>
+                                    </li>
+
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="mySidenav">
+                <a href="#">Thông tin cá nhân <span><img src="../HTML-chinh/Photo/glyphicons-4-user.png" class="hinh1" alt="User Image"></span></a>
+                <a href="#">Kết quả<span><img src="../HTML-chinh/Photo/glyphicons-659-tick.png" class="hinh2" alt="User Image"></span></a>
+                <a href="#">Lịch thi<span><img src="../HTML-chinh/Photo/glyphicons-30-notes-2.png" class="hinh3" alt="User Image"></span></a>
+            </div>
+            <div class="Main">
+                <div class="Personalform">
+                    <h1>Thông tin cá nhân</h1>
+                    <div class="Avatar col-lg-4 col-md-4 col-xs-12">
+                        <img src="../HTML-chinh/Photo/Long.PNG" class="img-responsive Hinh" alt="HTML5 Icon" style="width:180px;height:230px;">
+                        <div class="progress" id="Tientrinh">
+                            <div class="progress-bar thanh" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%  ">
+                                0%
+                            </div>
+                        </div>
+                        <div class="Nhantientrinh">Tiến trình cập nhật thông tin</div>
+                        <div id="thongbaosai"></div>
+                    </div>
+                    <div class="Thongtin col-lg-8 col-md-8 col-xs-12">
+                        <table id="TTtable" style="width:90%">
+                            <tr>
+                                <td>
+                                    <div class="labelll"> Tên:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="uname" value="Bui Xuan Tri" id="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> Ngày Sinh:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="birthday" value="02-09-1997" id="birth">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> CMND :</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="idcard" value="215392922" id="idcard">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> SĐT :</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="telephone" value="0987527849" id="telephone">
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="button" class=" btn btn-default Update">Cập nhật</button>
+                        <button type="button" class=" btn btn-default Bro">Up hình</button>
+                        <button type="button" class=" btn btn-default Save">Lưu</button>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- BEGIN PRE-FOOTER -->
+            <div class="page-prefooter">
+                <div class="container">
+                    <div class="row1">
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                            <h2>Về Chúng Tôi</h2>
+                            <p>
+                                Triple.com là một website thi trắc nghiệm trực tuyến giúp cho vấn đề thi cử trở nên dễ dàng và đơn giản nhất. Được các trường đại học nổi tiếng tin dùng.
+                            </p>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                            <h2>Theo Dõi Chúng Tôi</h2>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="" class="facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="" class="twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="" class="googleplus"></a>
+                                </li>
+                                <li>
+                                    <a href="" class="youtube"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                            <h2>Liên Hệ</h2>
+                            <address class="margin-bottom-40">
+                    Điện Thoại: 0981026294 - 01672109425 - 0987527849<br>
+                     Email: <a href="">tracnghiemonlinetriple@gmail.com</a>
+                    </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PRE-FOOTER -->
+            <!-- BEGIN FOOTER -->
+            <div class="page-footer">
+                <div class="container">
+                    2017 &copy; Triple. All Rights Reserved.
+                </div>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

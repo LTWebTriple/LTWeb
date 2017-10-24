@@ -1,0 +1,183 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../HTML-chinh/css/bootstrap.css">
+    <link rel="stylesheet" href="../HTML-chinh/css/Style_Trangstu.css">
+    <script src="../HTML-chinh/js/JQuery.js"></script>
+    <script src="../HTML-chinh/js/Trangstu.js"></script>
+    <script src="../HTML-chinh/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="chinh">
+        <!-- BEGIN HEADER -->
+        <div class="header">
+            <div class="container">
+                <a class="site-logo" href=""><img src="../HTML-chinh/Photo/logo-corp-red.png" alt="Triple"></a>
+
+                <a href="javascript:void(0);" class="mobi-toggler" onclick="myFunction()"><i></i></a>
+
+                <!-- BEGIN NAVIGATION -->
+                <div class="header-navigation pull-right font-transform-inherit" id="myTopnav">
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle">Trang Chủ</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <button id="dropbtn" class="dropbtn" onclick="Chooselanguage()">NGÔN NGỮ</button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="">English</a>
+                                <a href="">Vietnamese</a>
+                            </div>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle">Hỗ Trợ</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle">Bùi Xuân Trí</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- END NAVIGATION -->
+            </div>
+        </div>
+
+        <!-- Header END -->
+        <div class="marquee">
+            <marquee>
+                Chào mừng đến với trang thi trắc nghiệm trực tuyến Triple. Chúc các bạn có một ngày học tập vui vẻ, một ca thi thành công tốt đẹp.!
+            </marquee>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-xs-12 choice">
+                <div class="btn-group-vertical">
+                    <button type="button" class="btn btn-primary Personal">Thông tin cá nhân</button>
+                    <button type="button" class="btn btn-primary Result">Kết quả</button>
+                    <button type="button" class="btn btn-primary Test">Lịch thi</button>
+                </div>
+                <div class="Clock">
+                    <div id="Date"></div>
+                    <div class="NewHour"><span id="hours"></span>:<span id="min"></span>:<span id="sec"></span></div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="Personalform">
+                    <div class="Avatar col-lg-4 col-md-4 col-xs-12">
+                        <img src="../HTML-chinh/Photo/Long.PNG" class="img-responsive Hinh" alt="HTML5 Icon" style="width:200px;height:260px;">
+                        <div class="progress" id="Tientrinh">
+                            <div class="progress-bar thanh" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                                0%
+                            </div>
+                        </div>
+                        <div class="Nhantientrinh">Tiến trình cập nhật thông tin</div>
+                        <div id="thongbaosai"></div>
+                    </div>
+                    <div class="Thongtin col-lg-8 col-md-8 col-xs-12">
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <div class="labelll"> Name:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="uname" value="Bui Xuan Tri" id="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> Birthday:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="birthday" value="02-09-1997" id="birth">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> ID card:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="idcard" value="215392922" id="idcard">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="labelll"> Tel:</div>
+                                </td>
+                                <td><input type="text" placeholder="" name="telephone" value="0987527849" id="telephone">
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="button" class=" btn btn-default Change">Change</button>
+                        <button type="button" class=" btn btn-default Update">Update</button>
+                        <button type="button" class=" btn btn-default Bro">Bro</button>
+                        <button type="button" class=" btn btn-default Save">Save</button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- BEGIN PRE-FOOTER -->
+        <div class="page-prefooter">
+            <div class="container">
+                <div class="row1">
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>Về Chúng Tôi</h2>
+                        <p>
+                            Triple.com là một website thi trắc nghiệm trực tuyến giúp cho vấn đề thi cử trở nên dễ dàng và đơn giản nhất. Được các trường đại học nổi tiếng tin dùng.
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>Theo Dõi Chúng Tôi</h2>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="" class="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="" class="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="" class="googleplus"></a>
+                            </li>
+                            <li>
+                                <a href="" class="youtube"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>Liên Hệ</h2>
+                        <address class="margin-bottom-40">
+				Điện Thoại: 0981026294 - 01672109425 - 0987527849<br>
+				 Email: <a href="">tracnghiemonlinetriple@gmail.com</a>
+				</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PRE-FOOTER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="container">
+                2017 &copy; Triple. All Rights Reserved.
+            </div>
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
